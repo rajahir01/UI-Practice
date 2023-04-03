@@ -45,3 +45,35 @@ The nested <li> elements are descendants of the <ul> element and can be selected
  
 }
 
+
+li h4 {
+  color:gold;
+}
+
+h4 {
+  color:dodgerblue;
+}
+
+Will the <h4> elements turn blue? 
+
+The elements stay gold because there is a more specific selector for <h4> elements you wrote in the last step. Because of the more specific CSS selector (li h4), the more general selector of h4 will not take hold.
+
+
+5.
+Important
+ Once !important is used, it is very hard to override.
+
+The syntax of !important in CSS looks like this:
+
+p {
+  color: blue !important;
+}
+ 
+.main p {
+  color: red;
+}
+
+Since !important is used on the p selector’s color attribute, all p elements will appear blue, even though there is a more specific .main p selector that sets the color attribute to red
+
+
+
