@@ -1,0 +1,18 @@
+1. 
+<h5 class='author-class' id='author-id'>By: Stacy Gray</h5>
+
+CSS:
+h5 {
+  color: yellow;
+}
+ 
+.author-class {
+  color: pink;
+}
+ 
+#author-id {
+  color: cornflowerblue;
+}
+
+Each of these rules selects the same element in a different way. Which style will win the “specificity war”?
+Because ID is the most specific selector, the element will change to cornflower blue. You may have noticed the other <h5> elements changed to yellow. This is because the most specific (and only) selector they have is their type.
